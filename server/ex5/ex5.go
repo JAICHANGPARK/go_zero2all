@@ -34,6 +34,7 @@ func MakeWebHandler() http.Handler {
 }
 
 type Students []Student // Id로 정렬하는 인터페이스
+
 func (s Students) Len() int {
 	return len(s)
 }
